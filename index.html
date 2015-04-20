@@ -8,11 +8,32 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
+    <script type="text/javascript">
+        setTimeout(function(){ 
+          document.getElementById("cover").style.display = "inline-block";
+           document.getElementById("overlay").style.display = "inline-block";
+         }, 3000);
+         var left =58;
+         var animate= setInterval(function(){ 
+
+              document.getElementById("overlay").style.left = left+'%';
+             left = left+1;
+              if(left >= 100)
+              {
+               
+                document.getElementById("cover").style.display = "none";
+                document.getElementById("overlay").style.display= 'none';
+                clearInterval(animate)
+              }
+
+         }, 250);
+
+    </script>
   </head>
   <body>
     <section class="page-header">
       <h1 class="project-name">Internshiptask</h1>
-      <h2 class="project-tagline"></h2>
       <a href="https://github.com/bharath559/InternshipTask" class="btn">View on GitHub</a>
       <a href="https://github.com/bharath559/InternshipTask/zipball/master" class="btn">Download .zip</a>
       <a href="https://github.com/bharath559/InternshipTask/tarball/master" class="btn">Download .tar.gz</a>
@@ -22,6 +43,36 @@
       <h1>
 <a id="internshiptask" class="anchor" href="#internshiptask" aria-hidden="true"><span class="octicon octicon-link"></span></a>InternshipTask</h1>
 
+    <div class="container">
+      <div id="block1" class="inline" ></div>
+      <div id="block2" class="inline" style="display:inline-block"></div>
+      <div id="block3" class="inline" style="display:inline-block"></div>
+      <div id="block4" class="inline" style="display:inline-block"></div>
+      <div id="block5" class="inline" style="display:inline-block"></div>
+      <div id="block6" class="inline" ></div>    
+      <div id="block7" class="inline" ></div>
+      <div id="block8" class="inline" style="display:inline-block"></div>
+      <div id="block9" class="inline" style="display:inline-block"></div>
+      <div id="cover" style="display:none"></div>
+     <div id="overlay" class="overlay-content popup1" style="display:none">
+        <h1>This is a headline that will not wrap</h1>
+        <div class="content">
+          Lorem ipum dolor sit ament, consectetur adipiscing elit. Aliquam<br/>
+          viverra laoreet libero non laoreet. Aliquam porttitor at nisi at <br/>
+          fermentum. Nullam in lobortis massa. In at placerat lectus, non lacinia<br/>
+          erat. Fusce rhoncus vehicula diam, in suscipit justo varius vitae. Nunc<br/>
+          egestas nec turpis ut euismod. Nullam vel aliquam mauris. Mauris<br/>
+          venenatis, neque quis iaculis commodo, turpis lorem elementum<br/>
+          tellus, quis rutrum magna odio ac magna. Proin imperdiet dolor non<br/>
+          est fringilla mollis. Donec eu nisl aliquet, ultrices metus ac, <br/>
+          condimentum risus. Phasellus vehicula sed nunc nec pharatra. Nunc<br/>
+          mollis a sapien sit amet venenatis. Quisque vitae lacus eget leo<br/>
+          eleifend congue sed nec elit. Aenean vel metus mauris. Fusce dapibus,
+
+        </div>
+      </div>
+   </div>
+    
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/bharath559/InternshipTask">Internshiptask</a> is maintained by <a href="https://github.com/bharath559">bharath559</a>.</span>
 
